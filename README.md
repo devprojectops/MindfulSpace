@@ -96,17 +96,7 @@ MindfulSpace is a comprehensive mental wellness application that combines cuttin
    npm install
    ```
 
-3. **Environment Setup**
-   Create a `.env` file in the root directory:
-   ```env
-   VITE_FIREBASE_API_KEY=your_firebase_api_key
-   VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
-   VITE_FIREBASE_PROJECT_ID=your_project_id
-   VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
-   VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-   VITE_FIREBASE_APP_ID=your_app_id
-   VITE_GEMINI_API_KEY=your_gemini_api_key
-   ```
+
 
 4. **Firebase Setup**
    - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
@@ -134,7 +124,7 @@ npm run preview
 ## 📁 Project Structure
 
 ```
-aura-serene-mind/
+mindfulsapce/
 ├── src/
 │   ├── components/          # Reusable UI components
 │   │   ├── ui/             # shadcn/ui components
@@ -281,27 +271,10 @@ If you encounter any issues or need help:
 - **Radix UI** for accessible primitives
 - **Mental health professionals** for guidance and validation
 
-## 📈 Roadmap
 
-### **Upcoming Features**
-- [ ] Multi-language support
-- [ ] Wearable device integration
-- [ ] Group therapy sessions
-- [ ] Advanced analytics dashboard
-- [ ] Mobile app (React Native)
-- [ ] Therapist portal
-- [ ] Insurance integration
 
-### **Recent Updates**
-- [x] Google Gemini AI integration
-- [x] Real-time mood tracking
-- [x] Audio meditation tools
-- [x] Responsive design improvements
-- [x] Firebase authentication
 
 ---
-
-<div align="center">
 
 **Made with ❤️ for mental wellness**
 
