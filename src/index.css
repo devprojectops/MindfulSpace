@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dreamy Mental Health App Design System - Romantic & Soothing */
+
+@layer base {
+  :root {
+    /* Dreamy Background Gradients */
+    --background: 245 25% 8%;
+    --background-secondary: 250 20% 12%;
+    --foreground: 300 20% 95%;
+
+    /* Dreamy Purple & Pink Palette */
+    --primary: 280 100% 70%;
+    --primary-glow: 290 100% 80%;
+    --primary-soft: 285 60% 85%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 100% 70%;
+    --secondary-glow: 195 100% 80%;
+    --secondary-foreground: 245 25% 8%;
+
+    /* Romantic Accent Colors */
+    --accent: 320 100% 75%;
+    --accent-glow: 315 100% 85%;
+    --accent-foreground: 245 25% 8%;
+
+    --lavender: 270 50% 80%;
+    --lavender-soft: 275 40% 90%;
+    --sky-blue: 200 100% 80%;
+    --dreamy-pink: 330 100% 85%;
+
+    /* Glass Morphism */
+    --glass: 300 20% 95% / 0.1;
+    --glass-border: 300 20% 95% / 0.2;
+    --glass-hover: 300 20% 95% / 0.15;
+
+    /* Cards & UI */
+    --card: 250 20% 12% / 0.8;
+    --card-foreground: 300 20% 95%;
+    --card-border: 300 20% 95% / 0.1;
+
+    --popover: 250 20% 12%;
+    --popover-foreground: 300 20% 95%;
+
+    --muted: 250 15% 20%;
+    --muted-foreground: 300 10% 70%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 300 20% 95% / 0.1;
+    --input: 250 20% 15%;
+    --ring: 280 100% 70%;
+
+    --radius: 1rem;
+
+    /* Dreamy Gradients */
+    --gradient-dreamy: linear-gradient(135deg, 
+      hsl(280 100% 70% / 0.8) 0%, 
+      hsl(320 100% 75% / 0.6) 25%,
+      hsl(200 100% 70% / 0.7) 50%,
+      hsl(270 50% 80% / 0.5) 75%,
+      hsl(330 100% 85% / 0.6) 100%);
+    
+    --gradient-cosmic: linear-gradient(45deg,
+      hsl(245 25% 8%) 0%,
+      hsl(280 100% 70% / 0.3) 25%,
+      hsl(200 100% 70% / 0.2) 50%,
+      hsl(320 100% 75% / 0.3) 75%,
+      hsl(250 20% 12%) 100%);
+
+    --gradient-aurora: linear-gradient(180deg,
+      hsl(280 100% 70% / 0.4) 0%,
+      hsl(200 100% 70% / 0.3) 30%,
+      hsl(320 100% 75% / 0.2) 60%,
+      hsl(245 25% 8%) 100%);
+
+    /* Shadows & Glows */
+    --shadow-dreamy: 0 20px 40px hsl(280 100% 70% / 0.3);
+    --shadow-glow: 0 0 60px hsl(280 100% 70% / 0.4);
+    --shadow-soft: 0 10px 30px hsl(245 25% 8% / 0.5);
+
+    /* Animation Properties */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --animation-float: float 6s ease-in-out infinite;
+    --animation-pulse-glow: pulse-glow 3s ease-in-out infinite;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    background: var(--gradient-cosmic);
+    min-height: 100vh;
+  }
+}
+
+/* Dreamy Animations & Keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-20px) scale(1.05); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.3),
+                0 0 60px hsl(var(--primary) / 0.2),
+                0 0 90px hsl(var(--primary) / 0.1);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.5),
+                0 0 80px hsl(var(--primary) / 0.3),
+                0 0 120px hsl(var(--primary) / 0.2);
+    transform: scale(1.02);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0.5) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1) rotate(180deg); }
+}
+
+@keyframes wave {
+  0% { transform: translateX(-100%) scaleY(1); }
+  50% { transform: translateX(0%) scaleY(1.2); }
+  100% { transform: translateX(100%) scaleY(1); }
+}
+
+@keyframes breathing {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.7; }
+  50% { transform: scale(1.1) rotate(5deg); opacity: 1; }
+}
+
+/* Glass Morphism Utilities */
+@layer components {
+  .glass-card {
+    @apply bg-glass backdrop-blur-xl border border-glass-border rounded-2xl;
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .glass-hover {
+    @apply hover:bg-glass-hover transition-all duration-300;
+  }
+  
+  .dreamy-gradient {
+    background: var(--gradient-dreamy);
+  }
+  
+  .cosmic-gradient {
+    background: var(--gradient-cosmic);
+  }
+  
+  .aurora-gradient {
+    background: var(--gradient-aurora);
+  }
+  
+  .glow-effect {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .floating {
+    animation: var(--animation-float);
+  }
+  
+  .pulse-glow {
+    animation: var(--animation-pulse-glow);
+  }
+  
+  .breathing {
+    animation: breathing 4s ease-in-out infinite;
+  }
+  
+  .sparkle {
+    animation: sparkle 2s ease-in-out infinite;
+  }
+}
