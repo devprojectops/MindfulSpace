@@ -23,7 +23,8 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/landing" element={<Landing />} />
           <Route path="/SignInSignUp" element={<SignInSignUpModal onClose={() => {}} />} />
           <Route path="/dashboard" element={<Dashboard />} />
